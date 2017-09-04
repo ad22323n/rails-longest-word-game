@@ -1,0 +1,15 @@
+<h1>Play#game</h1>
+<p>Find me in app/views/play/game.html.erb</p>
+
+
+<form action="/score" method="get">
+  <input type="hidden" name="start_time" value="<%= Time.now %>">
+
+  <input type="hidden" name="grid" value="<%= @grid %>">
+<!--   <input type="hidden" name="attempt[id]" value="abcd">
+ -->  Your word
+  <input type="text" id="player" name= "my_game" placeholder="Write a word">
+  <input type="submit">
+</form>
+
+<h1><%= @grid %></h1>
